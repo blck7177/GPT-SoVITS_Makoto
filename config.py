@@ -121,9 +121,9 @@ def change_choices():
     }
 
 
-# 推理用的指定模型
-sovits_path = ""
-gpt_path = ""
+# 推理用的指定模型(可通过环境变量覆盖)
+sovits_path = os.environ.get("SOVITS_MODEL", "")
+gpt_path = os.environ.get("GPT_MODEL", "")
 is_half_str = os.environ.get("is_half", "True")
 is_half = True if is_half_str.lower() == "true" else False
 is_share_str = os.environ.get("is_share", "False")
