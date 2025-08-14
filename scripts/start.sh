@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /workspace/your-gptsovits || exit 1
+cd /workspace/GPT-SoVITS_Makoto || exit 1
 source .venv/bin/activate
 
 # Load variables
@@ -14,8 +14,8 @@ APP_PORT=${APP_PORT:-9880}
 cd GPT-SoVITS || exit 1
 
 # Launch API (v2) in background
-nohup /workspace/your-gptsovits/.venv/bin/python api_v2.py \
-  -a 0.0.0.0 -p "${APP_PORT}" -c /workspace/your-gptsovits/configs/tts_infer.yaml \
+nohup /workspace/GPT-SoVITS_Makoto/.venv/bin/python api_v2.py \
+  -a 0.0.0.0 -p "${APP_PORT}" -c /workspace/GPT-SoVITS_Makoto/configs/tts_infer.yaml \
   > /workspace/gptsovits_api.log 2>&1 &
 
 # Wait for service

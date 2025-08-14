@@ -5,7 +5,8 @@ set -euxo pipefail
 apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get install -y ffmpeg libsox-dev git
 
-cd /workspace/your-gptsovits || exit 1
+# 项目根目录
+cd /workspace/GPT-SoVITS_Makoto || exit 1
 
 # Python virtual environment
 python3 -m venv .venv
@@ -21,4 +22,4 @@ pip install -r requirements.txt
 mkdir -p /workspace/weights
 mkdir -p GPT_SoVITS/pretrained_models
 
-echo "Bootstrap finished. Activate venv with: source /workspace/your-gptsovits/.venv/bin/activate"
+echo "Bootstrap finished. Activate venv with: source /workspace/GPT-SoVITS_Makoto/.venv/bin/activate"

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /workspace/your-gptsovits || exit 1
+cd /workspace/GPT-SoVITS_Makoto || exit 1
 
 if [ -f .env ]; then
   set -a; source .env; set +a
