@@ -11,7 +11,7 @@ fi
 
 APP_PORT=${APP_PORT:-9880}
 
-cd GPT-SoVITS || exit 1
+# cd GPT_SoVITS || exit 1
 
 # Launch API (v2) in background
 nohup /workspace/GPT-SoVITS_Makoto/.venv/bin/python api_v2.py \

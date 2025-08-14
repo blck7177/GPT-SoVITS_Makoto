@@ -1,10 +1,9 @@
-device: cuda
-is_half: true
-version: v2
+custom:
+  device: cuda
+  is_half: true
+  version: v2
+  t2s_weights_path: /workspace/weights/makoto_test1-e25.ckpt
+  vits_weights_path: /workspace/weights/makoto_test1_e25_s750.pth
 
-# Absolute paths can be filled or managed via the /set_*_weights endpoints
-# t2s_weights_path: /workspace/weights/makoto_test1-e25.ckpt
-# vits_weights_path: /workspace/weights/makoto_test1_e25_s750.pth
-
-cnhubert_base_path: GPT_SoVITS/pretrained_models/chinese-hubert-base
-bert_base_path: GPT_SoVITS/pretrained_models/chinese-roberta-wwm-ext-large
+  cnhubert_base_path: /workspace/GPT-SoVITS_Makoto/GPT_SoVITS/pretrained_models/chinese-hubert-base
+  bert_base_path: /workspace/GPT-SoVITS_Makoto/GPT_SoVITS/pretrained_models/chinese-roberta-wwm-ext-large
