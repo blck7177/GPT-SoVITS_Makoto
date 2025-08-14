@@ -14,7 +14,7 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 
 # Install upstream dependencies
-cd GPT-SoVITS
+# cd GPT-SoVITS
 pip install -r extra-req.txt --no-deps
 pip install -r requirements.txt
 
