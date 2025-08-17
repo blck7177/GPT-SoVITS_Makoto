@@ -1,4 +1,8 @@
 目前的脚本体系已经可以覆盖“一键部署→下载所有权重→生成 `tts_infer.yaml`→启动 API”的完整闭环；只需按下列顺序执行即可：
+0. 首次 clone
+git clone https://github.com/blck7177/GPT-SoVITS_Makoto.git
+cd GPT-SoVITS_Makoto
+
 
 1. 依赖安装（含虚拟环境）  
    ```bash
